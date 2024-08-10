@@ -44,6 +44,7 @@ Recently completed (since last push, so put in commit msg):
 WIWWO: 
 8/10: making node and react their own files to host
    -added docker and yml and secrets
+   !! need to redo node and react on ec2 with new repos
 
 Odds, ends, and reminders
    Using git:
