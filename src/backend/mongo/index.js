@@ -9,7 +9,8 @@ import leagueRoute from './routes/league.js';
 import preferences from './routes/preferences.js';
 import standings from './routes/standings.js';
 
-const PORT = 80;
+const PORT = 5000;
+const HOST = 'ec2-3-86-224-88.compute-1.amazonaws.com'
 const app = express();
 
 app.use(cors());
@@ -30,6 +31,6 @@ app.use((err, _req, res, next) => {
 })
 
 // start the Express server
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
   console.log(`DB running on ${PORT}`);
 });

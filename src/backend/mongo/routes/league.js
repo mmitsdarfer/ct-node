@@ -6,7 +6,7 @@ import nets from "../../nets.js";
 
 let current, time, priority;
 
-const PORT = 80;
+const PORT = 5000;
 const baseUrl = `http://localhost:${PORT}`;
 const USER = 'mikeymits'; //TODO: replace with login
 async function loadDb(){
