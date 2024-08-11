@@ -25,4 +25,4 @@ jobs:
             - name: Pull image from docker hub
               run: docker pull mmitsdarfer/ct-node:latest
             - name: Run docker container
-              run: docker run -d -p 5000:5000 --name ct-node-container -e MONGO_PASSWORD='${{secrets.MONGO_PASSWORD}}' mmitsdarfer/ct-node
+              run: docker run -d -p 5000:5000 --name ct-node-new-container -e MONGO_PASSWORD='${{secrets.MONGO_PASSWORD}}' mmitsdarfer/ct-node
