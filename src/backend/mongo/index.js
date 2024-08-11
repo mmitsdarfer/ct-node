@@ -9,7 +9,7 @@ import leagueRoute from './routes/league.js';
 import preferences from './routes/preferences.js';
 import standings from './routes/standings.js';
 
-const PORT = 5000;
+const PORT = 80;
 const app = express();
 
 app.use(cors());
