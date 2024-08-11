@@ -42,6 +42,7 @@ Recently completed (since last push, so put in commit msg):
 
 
 WIWWO: 
+8/11: on 1 port, trying to get on ec2
 8/10: hosting on aws
    !! site can't be reached...trying to figure out why
 
