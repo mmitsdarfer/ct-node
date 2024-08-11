@@ -10,7 +10,7 @@ import preferences from './routes/preferences.js';
 import standings from './routes/standings.js';
 
 const PORT = 5000;
-const HOST = 'ec2-3-86-224-88.compute-1.amazonaws.com'
+const HOST = 'https://ec2-3-86-224-88.compute-1.amazonaws.com'
 const app = express();
 
 app.use(cors());

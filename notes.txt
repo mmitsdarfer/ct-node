@@ -56,6 +56,8 @@ Odds, ends, and reminders
 
    When using mongodb from a different location need to configure IP
 
+   EC2 console clear space: sudo docker stop ct-[node or react]-constainer  then: sudo docker system prune --all
+
 AWS Things:
 https://www.youtube.com/watch?v=MmidULYvjYE ~10:00 currently
 Done: 

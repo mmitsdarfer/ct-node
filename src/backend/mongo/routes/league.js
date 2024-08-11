@@ -7,7 +7,8 @@ import nets from "../../nets.js";
 let current, time, priority;
 
 const PORT = 5000;
-const baseUrl = `http://localhost:${PORT}`;
+const HOST = 'https://ec2-3-86-224-88.compute-1.amazonaws.com';
+const baseUrl = `${HOST}:${PORT}`;
 const USER = 'mikeymits'; //TODO: replace with login
 async function loadDb(){
     let results = await fetch(`${baseUrl}/preferences/${USER}`)
