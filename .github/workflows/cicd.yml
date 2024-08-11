@@ -14,15 +14,15 @@ jobs:
             - name: Login to docker hub
               run: docker login -u ${{ secrets.DOCKER_USERNAME}} -p ${{ secrets.DOCKER_PASSWORD}}
             - name: Build Docker Image
-              run: docker build -t mmitsdarfer/ct-node-new  .
+              run: docker build -t mmitsdarfer/ct-node  .
             - name: Publish Image to docker hub
-              run: docker push mmitsdarfer/ct-node-new:latest
+              run: docker push mmitsdarfer/ct-node:latest
     
     deploy:
         needs: build
         runs-on: self-hosted
         steps:
             - name: Pull image from docker hub
-              run: docker pull mmitsdarfer/ct-node-new:latest
+              run: docker pull mmitsdarfer/ct-node:latest
             - name: Run docker container
-              run: docker run -d -p 5000:5000 --name ct-node-new-container -e MONGO_PASSWORD='${{secrets.MONGO_PASSWORD}}' mmitsdarfer/ct-node-new
+              run: docker run -d -p 5000:5000 --name ct-node-container -e MONGO_PASSWORD='${{secrets.MONGO_PASSWORD}}' mmitsdarfer/ct-node
